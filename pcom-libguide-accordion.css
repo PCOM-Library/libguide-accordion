@@ -1,0 +1,87 @@
+/* Indicate start and end of accordion region in editor */
+.pcom-accordion-wrapper:before, 
+.pcom-accordion-wrapper:after {
+	display: block;
+	font-weight: 700;
+	text-align: center;
+	font-size: 1.25em;
+	font-style: italic;
+}
+.pcom-accordion-wrapper:before {
+	content: '--- BEGIN PCOM ACCORDION ---';
+}
+.pcom-accordion-wrapper:after {
+	content: '--- END PCOM ACCORDION ---';
+}
+
+/* turn off start and end indicators in live view */
+.pcom .pcom-accordion-wrapper:before, 
+.pcom .pcom-accordion-wrapper:after {
+	content: none;
+}
+
+/* Add pseudo plus signs to H3 headings in editor */
+.pcom-accordion-wrapper h3:before {
+	content: '\f067';
+	font-family: FontAwesome;
+	text-rendering: auto;
+	margin-right: 0.25em;
+}
+
+/* turn off pseudo plus signs in live view */
+.pcom .pcom-accordion-wrapper h3:before {
+	content: none;
+}
+
+/* Below are all stylings that appear in live view (as they start with .pcom) */
+
+.pcom .pcom-accordion-wrapper h3 {
+	font-size: 1rem;
+	margin: 0;
+}
+.pcom .pcom-accordion-wrapper h3:before {
+	content: none;
+}
+
+.pcom .pcom-accordion-wrapper h3 span.fa + span {
+	 letter-spacing: 0.0375em;
+}
+
+.pcom .pcom-accordion-wrapper div + h3 {
+	margin-top: 0.5rem;
+}
+
+.pcom .pcom-accordion-wrapper h3 button {
+	width: 100%;
+	text-align: left;
+	position: relative;
+	border: none;
+	border-radius: var(--pcom-border-radius);
+	padding: 0.375em .5em;
+	background: var(--pcom-blue);
+	color: var(--pcom-white);
+}
+
+.pcom .pcom-accordion-wrapper h3 button:hover {
+	outline: none;
+	border: solid 2px var(--pcom-dark-blue);
+	background: var(--pcom-yellow);
+	color: var(--pcom-text);
+	font-weight: 400;
+}
+.pcom .pcom-accordion-wrapper h3 button:focus {
+	outline: solid 2px currentColor;
+	outline-offset: -5px !important;
+}
+
+.pcom .pcom-accordion-wrapper h3 button .fa {
+	margin-right: 0.375em;
+	font-size: 1em;
+}
+
+.pcom .pcom-accordion-wrapper h3 button[aria-expanded="true"] .fa-plus {
+	display: none;
+}
+.pcom .pcom-accordion-wrapper h3 button[aria-expanded="false"] .fa-minus {
+	display: none;
+}
