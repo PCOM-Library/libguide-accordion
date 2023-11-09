@@ -2,8 +2,8 @@ let PCOM_ACC_REG_COUNT = 1;
 
 let acc = document.querySelector('.pcom-accordion-wrapper');
 let el = acc.firstElementChild;
-while(el && el.tagName != 'H3') 
-	el = el.nextElementSibling;
+while(el && el.nodeName != 'H3') 
+	el = el.nextSibling;
 while(el != null) {
 	// at this point, we're at an H3 and will process until end of the wrapper or the next H3
 	
@@ -18,8 +18,6 @@ while(el != null) {
 	button.setAttribute('aria-controls', id);
 	button.addEventListener('click', function(evt) {
 		let b = evt.currentTarget;
-		console.log(b);
-		console.log(b.getAttribute('aria-controls'));
 		if(b.getAttribute('aria-expanded') == 'true') {
 			b.setAttribute('aria-expanded', 'false')
 			document.getElementById(b.getAttribute('aria-controls')).style.display = 'none';
@@ -30,10 +28,10 @@ while(el != null) {
 		}
 	});
 	let nodesToAdd = [];
-	el = el.nextElementSibling;
+	el = el.nextSibling;
 	while(el && el.tagName != "H3") {
 		nodesToAdd.push(el);
-		el = el.nextElementSibling;
+		el = el.nextSibling;
 	}
 	let region = document.createElement('div');
 	region.id = id;
