@@ -68,7 +68,6 @@
 	border: solid 2px var(--pcom-blue);
 	background: var(--pcom-yellow);
 	color: var(--pcom-text);
-	font-weight: 400;
 }
 .pcom .pcom-accordion-wrapper h3 button:focus {
 	outline: solid 2px currentColor;
