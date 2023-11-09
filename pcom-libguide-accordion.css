@@ -25,7 +25,7 @@
 	content: '\f067';
 	font-family: FontAwesome;
 	text-rendering: auto;
-	margin-right: 0.25em;
+	margin-right: .25em;
 }
 
 /* turn off pseudo plus signs in live view */
@@ -44,11 +44,11 @@
 }
 
 .pcom .pcom-accordion-wrapper h3 span.fa + span {
-	 letter-spacing: 0.0375em;
+	 letter-spacing: .0375em;
 }
 
 .pcom .pcom-accordion-wrapper div + h3 {
-	margin-top: 0.5rem;
+	margin-top: .5rem;
 }
 
 .pcom .pcom-accordion-wrapper h3 button {
@@ -56,15 +56,16 @@
 	text-align: left;
 	position: relative;
 	border: none;
+	border: solid 2px var(--pcom-blue);
 	border-radius: var(--pcom-border-radius);
-	padding: 0.375em .5em;
+	padding: .25em .375em;
 	background: var(--pcom-blue);
 	color: var(--pcom-white);
 }
 
 .pcom .pcom-accordion-wrapper h3 button:hover {
 	outline: none;
-	border: solid 2px var(--pcom-dark-blue);
+	border: solid 2px var(--pcom-blue);
 	background: var(--pcom-yellow);
 	color: var(--pcom-text);
 	font-weight: 400;
@@ -75,7 +76,7 @@
 }
 
 .pcom .pcom-accordion-wrapper h3 button .fa {
-	margin-right: 0.375em;
+	margin-right: .375em;
 	font-size: 1em;
 }
 
