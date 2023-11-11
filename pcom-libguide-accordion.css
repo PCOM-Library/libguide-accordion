@@ -19,7 +19,6 @@
 .pcom .pcom-accordion-wrapper:after {
 	content: none;
 }
-
 /* Add pseudo plus signs to H3 headings in editor */
 .pcom-accordion-wrapper h3:before {
 	content: '\f067';
@@ -33,8 +32,11 @@
 	content: none;
 }
 
-/* Below are all stylings that appear in live view (as they start with .pcom) */
 
+/* Below are all stylings that appear in live view (as they start with .pcom) */
+.pcom .pcom-accordion-wrapper {
+	margin-top: .375rem;
+}
 .pcom .pcom-accordion-wrapper h3 {
 	font-size: 1rem;
 	margin: 0;
@@ -48,7 +50,7 @@
 }
 
 .pcom .pcom-accordion-wrapper div + h3 {
-	margin-top: .5rem;
+	margin-top: .375rem;
 }
 
 .pcom .pcom-accordion-wrapper h3 button {
