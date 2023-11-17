@@ -54,6 +54,8 @@
 }
 
 .pcom .pcom-accordion-wrapper h3 button {
+	display: flex;
+	align-items: baseline;
 	width: 100%;
 	text-align: left;
 	position: relative;
