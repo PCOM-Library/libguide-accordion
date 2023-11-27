@@ -40,6 +40,8 @@
 .pcom .pcom-accordion-wrapper h3 {
 	font-size: 1rem;
 	margin: 0;
+	padding-bottom: 0;
+	border-bottom: none;
 }
 .pcom .pcom-accordion-wrapper h3:before {
 	content: none;
@@ -62,7 +64,7 @@
 	border: none;
 	border: solid 2px var(--pcom-blue);
 	border-radius: var(--pcom-border-radius);
-	padding: .25em .375em;
+	padding: .375em;
 	background: var(--pcom-blue);
 	color: var(--pcom-white);
 }
