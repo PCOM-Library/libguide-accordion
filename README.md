@@ -1,6 +1,8 @@
 # LibGuides Accessible "Accordion" Without Bootstrap
 This small code set allows you to add an accessible "accordion" to a LibGuides content box with minimal effort. I put the word "accordion" in quotes in that an accordion traditionally allows only one panel to be open at a time. This is not always desirable as it induces a cognitive access burden if a user needs information in multiple panels at the same time, they have to rely on memory or repeatedly flip between two panels. To avoid the nuance needed to determine when a true accordion is needed, I chose a universal design approach of defaulting to letting any number of panels be open at a time.
 
+This library also avoids using the Bootstrap framework as much as is possible in LibGuides, due in part to keep it a clean, accessible build with minimal complexity. 
+
 ## Deployment
 Download he JavaScript and CSS files and upload them to LibGuides. Be sure to link to the two files in your system settings. The code will not impact your pages unless you tell it to.
 
